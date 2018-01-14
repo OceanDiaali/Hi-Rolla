@@ -53,10 +53,13 @@ class ViewController: UIViewController {
         //diceOne.image = UIImage(named: "dice\(rand)")
         //diceTwo.image = UIImage(named: "dice\(rand)")
         dieSumDisplay.text = "\(dieSum)"
-        if dieSum == 12 {
-            dieSumDisplay.text = "Win!"
+        if dieSum == 7 || dieSum == 11 {
+            dieSumDisplay.text = "\(dieSum) Win!"
         }
-    }
+        if dieSum == 2 || dieSum == 3 || dieSum == 12{
+            dieSumDisplay.text = "\(dieSum) Lose!"
+        }
+    }// end of roll button
     
 
 }//end of class
